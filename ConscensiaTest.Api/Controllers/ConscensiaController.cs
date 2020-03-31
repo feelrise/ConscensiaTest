@@ -19,7 +19,7 @@ namespace ConscensiaTest.Api.Controllers
         public Int32 GetRandomNumber()
         {
             var rng = new Random();
-            return rng.Next(100);
+            return rng.Next(1, 100);
         }
     }
 }
