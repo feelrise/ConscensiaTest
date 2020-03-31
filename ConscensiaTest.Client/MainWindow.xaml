@@ -1,0 +1,16 @@
+﻿<Window x:Class="ConscensiaTest.Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConscensiaTest.Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="100" Width="300">
+    <Grid>
+        <DockPanel VerticalAlignment="center">
+            <TextBox Text="{Binding ElementName=Slider, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="40" />
+            <Slider x:Name="Slider" Maximum="100" Focusable="False" IsHitTestVisible ="False"  TickPlacement="BottomRight" IsSnapToTickEnabled="True"
+                    TickFrequency="1"/>
+        </DockPanel>
+    </Grid>
+</Window>
